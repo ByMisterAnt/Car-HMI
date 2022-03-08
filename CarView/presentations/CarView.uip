@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP version="7" >
+	<Project >
+		<ProjectSettings author="" company="" presentationWidth="1920" presentationHeight="1080" maintainAspect="False" preferKtx="False" flipCompressedTextures="False" >
+			<CustomColors count="16" >#ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff</CustomColors>
+		</ProjectSettings>
+		<BufferData >
+			<ImageBuffer sourcepath="../models/road_20.jpg" hasTransparency="False" hasOpaquePixels="True" />
+			<ImageBuffer sourcepath="../models/untitled/maps/Pagani_Zonda_R_2000.png" hasTransparency="False" hasOpaquePixels="True" />
+		</BufferData>
+		<Graph >
+			<Scene id="Scene_u14785" backgroundcolor="0.027451 0.0588235 0.203922 1" >
+				<Layer id="Layer_u42204" variants="" >
+					<Camera id="Camera_u6170" />
+					<Light id="Light_u16641" />
+					<Group id="untitled2_u23889" variants="" importid="__import__root__" >
+						<Camera id="Camera_u46388" name="Camera" clipfar="100" clipnear="0.1" fov="39.5978" importid="Camera" orientation="Right Handed" orthographic="False" position="735.889 495.831 -692.579" rotation="-157.231 37.8917 -145.651" rotationorder="XYZr" scale="1 1 1" />
+						<Model id="Pagani_Zonda_R_2000.001_u14083" variants="" name="Pagani_Zonda_R_2000.001" importid="Pagani_Zonda_R_2000.001" orientation="Right Handed" position="0 0 0" rotation="9.33467e-06 0 0" rotationorder="XYZr" scale="100 100 100" sourcepath="../models/untitled/meshes/Pagani_Zonda_R_2000.001.mesh" >
+							<ReferencedMaterial id="mat1_u12434" importfile="../models/untitled/untitled.import" importid="mat1" />
+						</Model>
+					</Group>
+					<Group id="road1_u45326" variants="" >
+						<Model id="Rectangle_u56072" variants="" >
+							<ReferencedMaterial id="дорога_20_u37901" />
+						</Model>
+						<Model id="Rectangle2_u22859" variants="" >
+							<ReferencedMaterial id="дорога_20_u49478" />
+						</Model>
+					</Group>
+					<Group id="road2_u48167" variants="" >
+						<Model id="Rectangle_u61636" variants="" >
+							<ReferencedMaterial id="дорога_20_u18472" />
+						</Model>
+						<Model id="Rectangle2_u10925" variants="" >
+							<ReferencedMaterial id="дорога_20_u60551" />
+						</Model>
+					</Group>
+					<Light id="Light2_u2898" />
+					<Group id="untitled3_u51623" variants="" importid="__import__root__" >
+						<Camera id="Camera_u1984" name="Camera" clipfar="100" clipnear="0.1" fov="39.5978" importid="Camera" orientation="Right Handed" orthographic="False" position="735.889 495.831 -692.579" rotation="-157.231 37.8917 -145.651" rotationorder="XYZr" scale="1 1 1" />
+						<Model id="Pagani_Zonda_R_2000.001_u29229" variants="" name="Pagani_Zonda_R_2000.001" importid="Pagani_Zonda_R_2000.001" orientation="Right Handed" position="0 0 0" rotation="9.33467e-06 0 0" rotationorder="XYZr" scale="100 100 100" sourcepath="../models/untitled/meshes/Pagani_Zonda_R_2000.001.mesh" >
+							<ReferencedMaterial id="mat1_u17571" importfile="../models/untitled/untitled.import" importid="mat1" />
+						</Model>
+					</Group>
+					<Light id="Light3_u56819" />
+				</Layer>
+				<Material id="__Container_u64038" >
+					<Material id="materials/mat1_u12048" >
+						<Image id="materials/mat1_u12048_diffusemap_u56254" />
+					</Material>
+					<Material id="materials/road_202_u8977" importfile="../models/road_20.jpg" >
+						<Image id="materials/road_202_u8977_diffusemap_u17746" />
+					</Material>
+				</Material>
+			</Scene>
+		</Graph>
+		<Logic >
+			<State name="Master Slide" component="#Scene_u14785" >
+				<Add ref="#Layer_u42204" name="Layer" />
+				<Add ref="#Camera_u6170" name="Camera" clipfar="3000" clipnear="1" fov="32" position="-102 414 -845" rotation="26 0 0" />
+				<Add ref="#Light_u16641" name="Light" position="0 468.428 -513.98" rotation="129 0 0" />
+				<Add ref="#__Container_u64038" name="__Container" />
+				<Add ref="#materials/mat1_u12048" name="materials/mat1" diffusemap="#materials/mat1_u12048_diffusemap_u56254" importfile="../models/untitled/untitled.import" importid="mat1" specularroughness="0.555556" />
+				<Add ref="#materials/mat1_u12048_diffusemap_u56254" name="mat1_diffusemap" importfile="../models/untitled/untitled.import" importid="mat1_diffusemap" pivotu="0.5" pivotv="0.5" positionu="-0.5" positionv="-0.5" sourcepath="../models/untitled/maps/Pagani_Zonda_R_2000.png" subpresentation="" tilingmodehorz="Tiled" tilingmodevert="Tiled" />
+				<Add ref="#materials/road_202_u8977" name="materials/road_202" diffusemap="#materials/road_202_u8977_diffusemap_u17746" importfile="../models/road_20.jpg" importid="" />
+				<Add ref="#materials/road_202_u8977_diffusemap_u17746" name="diffusemap" importid="" sourcepath="../models/road_20.jpg" subpresentation="" />
+				<State id="Scene-Slide3_u13345" name="Slide3" playmode="Play Through To..." playthroughto="Next" >
+					<Add ref="#untitled3_u51623" name="untitled3" importfile="../models/untitled/untitled.import" position="-102 0 0" rotation="0 180.082 0" scale="0.01 0.01 0.01" sourcepath="../models/untitled/untitled.import" >
+						<AnimationTrack property="rotation.x" type="Linear" >0 0 9 0</AnimationTrack>
+						<AnimationTrack property="rotation.y" type="Linear" >0 180 9 900</AnimationTrack>
+						<AnimationTrack property="rotation.z" type="Linear" >0 0 9 0</AnimationTrack>
+					</Add>
+					<Add ref="#Camera_u1984" name="Camera" eyeball="False" importfile="../models/untitled/untitled.import" />
+					<Add ref="#Pagani_Zonda_R_2000.001_u29229" name="Pagani_Zonda_R_2000.001" importfile="../models/untitled/untitled.import" />
+					<Add ref="#mat1_u17571" name="mat1" referencedmaterial="#materials/mat1_u12048" sourcepath="../materials/mat1.materialdef" />
+					<Add ref="#Light3_u56819" name="Light3" lightambient="0.729412 0.729412 0.729412 1" position="0 0 665.28" rotation="29 0 0" />
+				</State>
+				<State id="Scene-Slide2_u49085" name="Slide2" playmode="Looping" playthroughto="Previous" >
+					<Add ref="#untitled2_u23889" name="untitled2" importfile="../models/untitled/untitled.import" position="-102 0 0" rotation="0 180 0" scale="0.01 0.01 0.01" sourcepath="../models/untitled/untitled.import" />
+					<Add ref="#Camera_u46388" name="Camera" eyeball="False" importfile="../models/untitled/untitled.import" />
+					<Add ref="#Pagani_Zonda_R_2000.001_u14083" name="Pagani_Zonda_R_2000.001" importfile="../models/untitled/untitled.import" />
+					<Add ref="#mat1_u12434" name="mat1" referencedmaterial="#materials/mat1_u12048" sourcepath="../materials/mat1.materialdef" />
+					<Add ref="#road1_u45326" name="road1" position="0 0 247.46" scale="0.5 1 1" >
+						<AnimationTrack property="position.x" type="Linear" >0 0 5 0 5.014 0 5.03 0 10.148 0</AnimationTrack>
+						<AnimationTrack property="position.y" type="Linear" >0 0 5 0 5.014 -1 5.03 0 10.148 0</AnimationTrack>
+						<AnimationTrack property="position.z" type="Linear" >0 243 5 -2732 5.014 3186.94 5.03 3186.2 10.148 243</AnimationTrack>
+					</Add>
+					<Add ref="#Rectangle_u56072" name="Rectangle" position="-199 -25.6923 -1.12304e-06" rotation="90 0 0" scale="10 15 1" sourcepath="#Rectangle" />
+					<Add ref="#дорога_20_u37901" name="road_202" referencedmaterial="#materials/road_202_u8977" sourcepath="../materials/road_202.materialdef" />
+					<Add ref="#Rectangle2_u22859" name="Rectangle2" position="-199 -25.6924 1487.4" rotation="90 0 0" scale="10 15 1" sourcepath="#Rectangle" />
+					<Add ref="#дорога_20_u49478" name="road_202" referencedmaterial="#materials/road_202_u8977" sourcepath="../materials/road_202.materialdef" />
+					<Add ref="#road2_u48167" name="road2" position="0 0 -2716.31" scale="0.5 1 1" >
+						<AnimationTrack property="position.x" type="Linear" >0 0 5.016 0 10.315 0 10.466 0</AnimationTrack>
+						<AnimationTrack property="position.y" type="Linear" >0 0 5.016 0 10.315 0 10.466 0</AnimationTrack>
+						<AnimationTrack property="position.z" type="Linear" >0 3186.94 5.016 230 10.315 -2737 10.466 3186.94</AnimationTrack>
+					</Add>
+					<Add ref="#Rectangle_u61636" name="Rectangle" position="-199 -25.6923 -1.12304e-06" rotation="90 0 0" scale="10 15 1" sourcepath="#Rectangle" />
+					<Add ref="#дорога_20_u18472" name="road_202" referencedmaterial="#materials/road_202_u8977" sourcepath="../materials/road_202.materialdef" />
+					<Add ref="#Rectangle2_u10925" name="Rectangle2" position="-199 -25.6924 1487.4" rotation="90 0 0" scale="10 15 1" sourcepath="#Rectangle" />
+					<Add ref="#дорога_20_u60551" name="road_202" referencedmaterial="#materials/road_202_u8977" sourcepath="../materials/road_202.materialdef" />
+					<Add ref="#Light2_u2898" name="Light2" lightambient="0.729412 0.729412 0.729412 1" position="0 0 665.28" rotation="29 0 0" />
+				</State>
+			</State>
+		</Logic>
+	</Project>
+</UIP>

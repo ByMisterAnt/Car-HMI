@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>CarView/maps/Pagani_Zonda_R_2000.png</file>
+        <file>CarView/maps/Pagani_Zonda_R_2000_001.png</file>
+        <file>CarView/materials/mat1.materialdef</file>
+        <file>CarView/materials/mat1_001.materialdef</file>
+        <file>CarView/models/untitled/maps/Pagani_Zonda_R_2000.png</file>
+        <file>CarView/models/untitled/meshes/Pagani_Zonda_R_2000.001.mesh</file>
+        <file>CarView/models/untitled/untitled.import</file>
+        <file>CarView/models/untitled_001/maps/Pagani_Zonda_R_2000.png</file>
+        <file>CarView/models/untitled_001/meshes/Pagani_Zonda_R_2000.001.mesh</file>
+        <file>CarView/models/untitled_001/untitled.import</file>
+        <file>CarView/presentations/CarView.uip</file>
+        <file>CarView/CarView.uia</file>
+        <file>CarView/materials/road_20.materialdef</file>
+        <file>CarView/models/road_20.jpg</file>
+    </qresource>
+</RCC>

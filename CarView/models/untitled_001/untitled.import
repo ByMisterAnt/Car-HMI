@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP Version="1" >
+	<Project Revision="1" >
+		<Graph >
+			<Group id="__import__root__" >
+				<Light id="Light" name="Light" brightness="100000" castshadow="True" expfade="3000" lightdiffuse="1 1 1 1" lighttype="Point" linearfade="0" orientation="Right Handed" position="407.625 590.386 100.545" rotation="-132.466 72.7792 -169.256" rotationorder="XYZr" scale="1 1 1" />
+				<Camera id="Camera" name="Camera" clipfar="100" clipnear="0.1" fov="39.5978" orientation="Right Handed" orthographic="False" position="735.889 495.831 -692.579" rotation="-157.231 37.8917 -145.651" rotationorder="XYZr" scale="1 1 1" />
+				<Model id="Pagani_Zonda_R_2000.001" name="Pagani_Zonda_R_2000.001" orientation="Right Handed" position="0 0 0" rotation="9.33467e-06 0 0" rotationorder="XYZr" scale="100 100 100" sourcepath="meshes/Pagani_Zonda_R_2000.001.mesh" >
+					<Material id="mat1" name="mat1" blendmode="Normal" diffuse="1 1 1 1" diffusemap="mat1_diffusemap" emissivepower="0" opacity="100" specularamount="0" specularroughness="0.555556" >
+						<Image id="mat1_diffusemap" name="mat1_diffusemap" pivotu="0.5" pivotv="0.5" positionu="-0.5" positionv="-0.5" scaleu="1" scalev="1" sourcepath="maps/Pagani_Zonda_R_2000.png" tilingmodehorz="Tiled" tilingmodevert="Tiled" />
+					</Material>
+				</Model>
+			</Group>
+		</Graph>
+		<Import SrcFile="../../../cars/untitled.fbx" ImageDir="maps" MeshDir="meshes" >
+			<Image >
+				<Source >Pagani_Zonda_R_2000.png</Source>
+				<Dest >maps/Pagani_Zonda_R_2000.png</Dest>
+			</Image>
+			<Mesh >
+				<Source >Pagani_Zonda_R_2000.001</Source>
+				<Dest >meshes/Pagani_Zonda_R_2000.001.mesh</Dest>
+			</Mesh>
+		</Import>
+	</Project>
+</UIP>

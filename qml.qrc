@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Elements/Speedometer.qml</file>
+        <file>images/speedometr.png</file>
+        <file>images/dash.png</file>
+        <file>Elements/Custom3dStudio.qml</file>
+        <file>Elements/CustomTimer.qml</file>
+        <file>Elements/BottomPanel.qml</file>
+        <file>images/fuel-station.png</file>
+    </qresource>
+</RCC>
